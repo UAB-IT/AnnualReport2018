@@ -6,7 +6,6 @@
     <!--
       Convert design to responsive / mobile first layout
       Add header / footer
-      Explore animation with the content itself... animate sections?
       Insert actual images
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,18 +22,31 @@
       </script>
     <script src="http://www.uab.edu/toolkit/media/jui/js/jquery.min.js?2cfe6189265abf6b745dc5743812aa96"></script>
     <script src="http://www.uab.edu/toolkit/media/jui/js/jquery-noconflict.js?2cfe6189265abf6b745dc5743812aa96" type="text/javascript"></script>
-    <script src="http://www.uab.edu/toolkit/media/jui/js/jquery-migrate.min.js?2cfe6189265abf6b745dc5743812aa96" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="fonts.css">
     <!--WEBCOMM OUT-->
-    
+
     <link rel="stylesheet" type="text/css" href="AR2018.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
   <div class="parallax">
 
+    <header>
+      <section class="c1">
+        <img src="http://www.uab.edu/styles/5.0/images/uab_linear_white.png" alt="UAB">
+      </section>
+      <div class="c2"></div>
+      <section class="c3">
+        <h1>Information Technology<br><span>Annual Report</span></h1>
+      </section>
+    </header>
+
+    <article id="Hero">
+      <div class="videoWrapper">
+        <iframe width="492" height="277" src="http://www.youtube.com/embed/q_wmauFHSAw?rel=0&amp;enablejsapi=1&amp;origin=http:%2F%2Fwww.uab.edu" frameborder="0" allowfullscreen="" id="widget2"></iframe>
+      </div>
+    </article>
     <!--================
-          SECTION 2
+          SECTION 1
     =================-->
 
     <div class="parallax__group">
@@ -50,13 +62,13 @@
       </div>
 
 
-      <section class="c1 track">
+      <section class="c1">
         <h2>IT’s about <span>innovation</span>.</h2>
         <p>Studies that can help cure Parkinson’s disease. Funding for schizophrenia research. A tool that helps partner students and medical professionals to improve patient care. Research and work across campus inspires UAB IT to bring you technology solutions that fuel innovation— so that you can change the world.</p>
       </section>
       <div></div>
 
-      <section class="c2 white track">
+      <section class="c2 white">
         <div style="margin-top: 3rem; margin-bottom: 3rem; padding: 1.5rem 0px;">
           <h3>Paving the way</h3>
           <p>An underserved Birmingham population relies on the UAB School of Education Counseling Clinic for mental health help — but the clinic has struggled with funding over the years because it needed a technology solution to help keep patient data safe. But UAB Health System, UAB IT and the clinic partnered to remove the roadblocks to the solution, paving the way for the clinic to seek federal grants to help some of the region’s neediest citizens.</p>
@@ -66,7 +78,7 @@
 
       <div class="GreenBar ColorBox"></div>
 
-      <section class="c3 track">
+      <section class="c3">
         <h3>Funding the future</h3>
         <p>When Dr. Christine Lahti sought an NIH grant for her lab, her new partnership with the UAB IT research computing team was a factor in helping her work earn $4 million to study treatment for schizophrenia.</p>
       </section>
@@ -81,7 +93,7 @@
         </div>
       </section>
 
-      <section class="c4 track">
+      <section class="c4">
         <h3>Passion to help</h3>
         <p>At the heart of UAB Solutions Studio, says assistant professor Nancy Wingo, are “people with a passion to help people.” Solutions Studio has been connecting students, nurses and clinicians to solve patient-centered problems for years — and a partnership with UAB IT may make those connections easier.</p>
       </section>
@@ -117,18 +129,18 @@
       </div>
 
 
-      <section class="c1 track">
+      <section class="c1 animated">
         <h2>IT’s about <span>solutions</span>.</h2>
         <p>Documents signed from any device, no matter where you are. A mobile app that allows you to take your desk phone with you. A collaboration solution so you can chat with co-workers on the go. Sometimes the simplest solutions can streamline your day — so you can get more important work done.</p>
       </section>
 
-      <section class="c2 track">
+      <section class="c2">
         <div class="image" style="background-image: url('https://www.uab.edu/it/home/images/01graphics/placeholder.png')"></div>
         <div class="image"  style="background-image: url('https://www.uab.edu/it/home/images/01graphics/placeholder.png')"></div>
         <div class="image"  style="background-image: url('https://www.uab.edu/it/home/images/01graphics/placeholder.png')"></div>
       </section>
 
-      <section class="c3 track">
+      <section class="c3 animated">
         <h3>Sign anywhere, anytime</h3>
         <p>As manager of asset management for Financial Affairs, Dianne Manning is used to sending emails back and forth to track the signatures and approvals needed for various forms. But when those forms were created in the electronic signature tool DocuSign, turnaround went from weeks to days.</p>
         <div class="LearnMore">
@@ -136,7 +148,7 @@
         </div>
       </section>
 
-      <section class="c4 track">
+      <section class="c4 animated">
         <h3>Making clear connections</h3>
         <p>A state-of-the-art phone system is essential for the man who job is to keep an entire campus safe. Assistant Vice President and Chief of Police Anthony Purcell’s department was among the first to receive new phones powered by a voice-over-internet system that will eventually replace all of the phones on campus. “I love the new phones, and they are really simple to use,” Purcell says.</p>
         <div class="LearnMore">
@@ -144,7 +156,7 @@
         </div>
       </section>
 
-      <section class="c5">
+      <section class="c5 animated">
         <div class="StatNumber">
           <h4>XX</h4>
           <p>number of new IT solutions introduced this year</p>
@@ -181,7 +193,7 @@
         </div>
 
 
-      <section class="c1">
+      <section class="c1 animated">
         <div>
           <h2>IT’s about <span>security</span>.</h2>
           <p>New tools to help you safeguard your accounts. Simplified policies that take the guesswork out of campus security standards. Reporting that helps UAB IT’s security professionals take out bad guys before they penetrate too deeply into our systems. Without your help, UAB IT would not be able to accomplish its most important task: Creating a secure computing environment that helps all of us safely do our jobs.</p>
@@ -189,7 +201,7 @@
         <div class="image"></div>
       </section>
 
-      <section class="c2 white">
+      <section class="c2 white animated">
         <h3>Never change your password again</h3>
         <p>Those who have signed up for UAB’s 2-factor authentication tool, Duo, are doing more than protecting themselves and their personal information. They are protecting the rest of campus and its data. Their reward? Never changing their passwords again.</p>
         <div class="LearnMore">
@@ -199,7 +211,7 @@
 
       <div class="FullWidth ColorBox"></div>
 
-      <section class="c3">
+      <section class="c3 animated">
         <h3>From copper lines to clear connections</h3>
         <p>A state-of-the-art phone system is essential for the man who job is to keep an entire campus safe. Assistant Vice President and Chief of Police Anthony Purcell’s department was among the first to receive new phones powered by a voice-over-internet system that will eventually replace all of the phones on campus. “I love the new phones, and they are really simple to use,” Purcell says.</p>
         <div class="LearnMore">
@@ -207,7 +219,7 @@
         </div>
       </section>
 
-      <section class="c4">
+      <section class="c4 animated">
         <div class="StatNumber">
           <h4>XX</h4>
           <p>number of new IT solutions introduced this year</p>
@@ -244,44 +256,44 @@
         </div>
 
 
-      <section class="c1">
+      <section class="c1 animated">
         <h2>IT’s about <span>commitment</span>.</h2>
         <p>UAB’s IT Strategic Plan is built on seven IT imperatives, and achieving goals tied to those imperatives is the job of everyone in UAB IT. Because you helped write the IT Strategic Plan by giving feedback on your technology needs, you hold us accountable to our roadmap for success for all of campus.</p>
       </section>
 
       <div class="image c1img"></div>
 
-      <section class="c2">
+      <section class="c2 animated">
         <h3>Security</h3>
         <p>UAB’s most important IT imperative relies on a partnership of UAB IT’s security team, IT professionals across campus, and data stewards, not to mention every student, faculty member and employee who helps report suspicious activity. <br><strong>What we’ve done:</strong><br>introduced 2-factor authentication | streamlined policies | expanded the Security Operations Center | extended penetration testing of our networks.</p>
       </section>
 
-      <section class="c3">
+      <section class="c3 animated">
         <h3>Governance</h3>
         <p>Your technology ideas can help UAB fulfill its vision of creating knowledge that changes the world. Through governance, UAB IT wants to help you evaluate technology vendors to ensure they align with UAB’s security needs, with IT resources and alignment and with UAB’s strategic mission. <br><strong>What we’ve done:</strong><br>implemented a vendor assessment form to evaluate security risk of potential vendors | completed XX vendor assessments.</p>
       </section>
 
-      <section class="c4">
+      <section class="c4 animated">
         <h3>World-Class IT</h3>
         <p>You need not only advanced technology but also world-class customer service, so that when something goes wrong, we fix it quickly, so you get back to work. UAB IT’s Desktop Services team earned a 2.5 customer service maturity score from industry leader HDI this year —but most important, reduced the time it takes to help fix your problems. <br><strong>What we’ve done:</strong><br>defined service-level agreements | aligned employee goals to IT imperatives and UAB priorities | introduced a new customer service portal | solicited customer feedback.</p>
       </section>
 
-      <section class="c5">
+      <section class="c5 animated">
         <h3>Partnerships</h3>
         <p>Technology helps power important research and inspire in the classroom. By partnering with you, we’ve been able to harness technology as a force for academic and research success. <br><strong>What we’ve done:</strong><br>upgraded the UAB mobile app | refreshed XX new classrooms | hired a research computing AVP.</p>
       </section>
 
-      <section class="c6">
+      <section class="c6 animated">
         <h3>Business Value</h3>
         <p>UAB IT’s goal is to reduce costs, improve processes and generate revenue to help all of UAB. <br><strong>What we’ve done:</strong><br>implemented electronic signature too l DocuSign | lowered cell phone rates | migrated personal file shares to the cloud.</p>
       </section>
 
-      <section class="c7">
+      <section class="c7 animated">
         <h3>Data Driven Decisions</h3>
         <p>You need strong data to help make the best decisions for to advance UAB’s mission — data that shapes how we improve processes, foster research and retain students. We’ve introduced standardized methods for collecting and analyzing data and strengthened the policies that govern access to data. <br><strong>What we’ve done:</strong><br>implemented Tableau | introduced the Data Access Policy to protect who has access to Sensitive and Restricted data.</p>
       </section>
 
-      <section class="c8">
+      <section class="c8 animated">
         <h3>Community</h3>
         <p>UAB is helping build a strong technology ecosystem in Birmingham, and UAB IT is contributing to the city’s profile in the region and across the country. <br><strong>What we’ve done:</strong><br>Extended the 100 Gbps network to Innovation Depot | been featured in Harvard Business Review for the second year in a row | introduced Blazer for Life email for alumni and former employees.</p>
       </section>
@@ -312,12 +324,12 @@
       </div>
 
 
-      <section class="c1">
+      <section class="c1 animated">
         <h2>IT’s about <span>progress</span>.</h2>
         <p>When UAB IT introduces a new technology or service, you’re the winner. Campus needs are at the center of all we do, so our accomplishments are your wins.</p>
       </section>
 
-      <section class="c2">
+      <section class="c2 animated">
         <div class="card">
           <img src="https://www.uab.edu/it/home/images/01graphics/placeholder.png">
           <h5>Tech Reporting from UAB App</h5>
@@ -372,11 +384,37 @@
       </section>
 
     </article>
+</div>
+  <script src="AR2018.js"></script>
+
+  <footer>
+    <section class="c1">
+      <div>
+        <h4>About IT</h4>
+        <a href="http://www.uab.edu/it/home/about-uab-it">About IT</a><br>
+        <a href="http://www.uab.edu/it/home/strategic-plan">Strategic Plan</a><br>
+        <a href="http://uab.edu/it/annualreport">Annual Report</a>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <a href="https://uabprod.service-now.com/ess_portal/home.do">ASK IT</a><br>
+        <a href="tel:2059965555">205-996-5555</a><br>
+        <a href="mailto:askit@uab.edu">askit@uab.edu</a>
+      </div>
+      <div>
+        <h4>Join Us On Social Media</h4>
+      <a href="http://www.twitter.com/UABIT"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-96.png" alt="Twitter"></a>
+      <a href="https://www.youtube.com/channel/UCxNH0kFAOtTmLPb95H3kSbA/feed"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-youtube-96.png" alt="YouTube"></a>
+      <a href="http://instagram.com/UAB_IT"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-instagram-96.png" alt="Instagram"></a>
+      <a href="http://www.facebook.com/UABInformationTechnology"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-96.png" alt="Facebook"></a>
+    </div>
+    </section>
+    <section class="c2">
+      <img src="http://www.uab.edu/it/home/images/01graphics/uab_monogram_white.png" alt="UAB">
+      <a href="http://www.uab.edu/brand/web/disclaimer">Disclaimer</a> | <a href="http://www.uab.edu/policies/content/Pages/UAB-IT-POL-0000404.aspx">UAB Web Pages Policy</a> | <a href="http://www.uab.edu/it/home/contact">About UAB IT</a> | &copy; Copyright
+    </section>
+    <div class="c3"></div>
+  </footer>
   </div>
-
-  <script>
-    /*ScrollReveal().reveal('.track');*/
-  </script>
-
   </body>
 </html>
