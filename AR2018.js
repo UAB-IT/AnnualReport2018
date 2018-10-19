@@ -17,5 +17,15 @@ jQuery('.parallax').scroll(function() {
       jQuery(this).addClass('fadein');
     }
   });
+  jQuery('.underline').each(function() {
+    if (isScrolledIntoView(this) === true) {
+      jQuery(this).addClass('underlineAnim');
+    }
+  });
+  jQuery('.card').each(function(){
+    if (isScrolledIntoView(this) === true) {
+      jQuery(this).addClass('fadein');
+    }
+  });
 });
 });
