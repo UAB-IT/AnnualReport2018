@@ -9,6 +9,7 @@
   --Gold: #aa9767;
   --font1: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font2: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important;
+  --placeholder: url("https://www.uab.edu/it/home/images/01graphics/placeholder.png");
 }
 .c1{
   grid-row: 1/2;
@@ -171,10 +172,9 @@ section p{
   right: 0rem;
   width: 100%;
   height: 100%;
-  border: 1rem solid white;
-  background-image: url("https://www.uab.edu/it/home/images/01graphics/placeholder.png");
   background-position: center;
   background-size: cover;
+  min-height: 15rem;
 }
 #sect1 .GreenBar{
   grid-column: 1/4;
@@ -209,7 +209,6 @@ section p{
 /*SECTION 3*/
 
 #sect3 .c1 .image{
-  background-image: url("https://www.uab.edu/it/home/images/01graphics/placeholder.png");
   background-position: center;
   background-size: cover;
   min-height: 20rem;
@@ -254,7 +253,6 @@ section p{
   }
   #sect4 .c1img{
     min-height: 20rem;
-    background-image: url("https://www.uab.edu/it/home/images/01graphics/placeholder.png");
     grid-column: 2/3;
   }
   #sect4 .c9{
@@ -409,6 +407,9 @@ header h1 span{
   }
   #sect1 .c2{
     grid-column: 2/4;
+  }
+  #sect1 .c2 .image{
+    border: 1rem solid white;
   }
   #sect1 .c4{
     grid-column: 3/4;
