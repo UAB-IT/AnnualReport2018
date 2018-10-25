@@ -1,4 +1,5 @@
 /* Edits to base UAB CSS */
+
 body.hd #maincolumn-wide {
   padding: 0px !important;
   max-width: 100%;
@@ -150,6 +151,7 @@ section p{
   font-size: 200%;
   color: var(--SectColor);
   margin-top: 1rem;
+  font-weight: bold;
 }
 
 /*PARALLAX*/
@@ -374,6 +376,9 @@ nav{
   left: 0;
   right: 0;
 }
+
+/*Media Queries*/
+
 @media only screen and (min-width: 700px) {
   article, footer, header, #Navigation{
     grid-template-columns:  minmax(1em, 1fr) minmax(0, 35%) minmax(0,35%) minmax(1em, 1fr);
@@ -472,14 +477,14 @@ nav{
     position: relative;
   }
   @keyframes fade-in {
-  from {opacity: 0; top: 100px;/*transform: scale(0.5);*/}
-to {opacity: 1; top: 0px;/*transform: scale(1);*/}
-}
-.javascript .fadein{
-  animation-name: fade-in;
-  animation-duration: 0.5s;
-  opacity: 1;
-}
+    from {opacity: 0; top: 100px;/*transform: scale(0.5);*/}
+    to {opacity: 1; top: 0px;/*transform: scale(1);*/}
+  }
+  .javascript .fadein{
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    opacity: 1;
+  }
 }
 @media only screen and (min-width: 500px) {
   .ColorBox{
@@ -516,6 +521,9 @@ to {opacity: 1; top: 0px;/*transform: scale(1);*/}
     grid-column: 4/5;
   }
 }
+
+/*Navigation*/
+
 .topnav {
   width: 100%;
   background-color: white;
@@ -540,6 +548,7 @@ to {opacity: 1; top: 0px;/*transform: scale(1);*/}
   font-size: 17px;
   border-bottom: 4px solid #eee;
   margin-bottom: -4px;
+  font-weight: bold;
 }
 
 .topnav a:hover{
@@ -589,6 +598,10 @@ to {opacity: 1; top: 0px;/*transform: scale(1);*/}
     text-align: left;
   }
 }
+
+/*DELETE ALL CONTENT BELOW THIS LINE IN PRODUCTION*/
+
+/*Footer*/
 
 footer{
   background-color: #595959 !important;
@@ -641,7 +654,7 @@ header .c1{
   grid-column: 2/4;
 }
 header .c1 img{
-  width: 30rem;
+  width: 25rem;
   padding: 0.6rem 0rem 0.5rem;
   max-width: 100%;
 }
@@ -652,7 +665,8 @@ header .c2{
   z-index: -1;
 }
 header h1{
-  font-family: var(--font1);
+  font-family: var(--font2);
+  margin-top: 0.5rem;
   font-size: 1.75rem;
   line-height: 1.5rem;
   font-weight: 600;
