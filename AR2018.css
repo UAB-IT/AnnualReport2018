@@ -100,11 +100,6 @@ article h2 span{
   font-size: inherit;
   color: inherit;
 }
-#sect5 h5, #sect5 h4, #sect5 h4 a, #sect5 h4 strong, #sect5 h4 b{
-  font-size: 1rem !important;
-  font-family: var(--font2) !important;
-  font-weight: bold !important;
-}
 .whitetxt h1, .whitetxt h2, .whitetxt h3, .whitetxt h4, .whitetxt p{
   color: white !important;
 }
@@ -341,6 +336,12 @@ nav{
 }
 #sect5 .c2 h4{
   padding: 1rem 0px !important;
+}
+#sect5 h5, #sect5 h4, #sect5 h4 a, #sect5 h4 strong, #sect5 h4 b{
+  font-size: 0.8rem !important;
+  font-family: var(--font2) !important;
+  font-weight: bold !important;
+  margin: 0.3rem;
 }
 
 /*Animations*/
