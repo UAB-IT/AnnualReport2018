@@ -151,7 +151,7 @@ section p{
   font-size: 200%;
   color: var(--SectColor);
   margin-top: 1rem;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 /*PARALLAX*/
@@ -333,7 +333,7 @@ nav{
   color: black !important;
   background-color: #fafafa;
 }
-#sect5 .c2 a:hover{
+#sect5 .c2 a:hover, #sect5 .c2 a:hover .card{
   background-color: #eee;
 }
 #sect5 .c2 h4{
@@ -344,6 +344,7 @@ nav{
   font-family: var(--font2) !important;
   font-weight: bold !important;
   margin: 0.3rem;
+  align-self: center;
 }
 
 /*Animations*/
@@ -462,7 +463,7 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
-  #sect5 .c2 a{
+  #sect5 .c2 a.seeMore{
     grid-column: 2/3;
   }
   #sect5 .c2{
@@ -506,7 +507,7 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
   }
-  #sect5 .c2 a{
+  #sect5 .c2 a.seeMore{
     grid-column: 3/4;
   }
 }
@@ -517,7 +518,7 @@ nav{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
   }
-  #sect5 .c2 a{
+  #sect5 .c2 a.seeMore{
     grid-column: 4/5;
   }
 }
