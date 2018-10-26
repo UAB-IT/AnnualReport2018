@@ -158,6 +158,9 @@ section p{
 
 @media screen and (min-width: 40em) {
   @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+    body{
+      transform: translateZ(0);
+    }
     .parallax {
       perspective: 1px;
       height: 100vh;
@@ -208,6 +211,9 @@ nav{
   grid-row: 2/3;
   z-index: 5;
 }
+#sect1 .c2 h3, #sect1 .c2 p{
+  color: white !important;
+}
 #sect1 .c2 .image{
   position: relative;
   right: 0rem;
@@ -223,6 +229,8 @@ nav{
   grid-row: 2/3;
   height: calc(100% - 6rem);
   margin-top: 3rem;
+  background-color: var(--SectColor);
+  opacity: var(--Opacity);
 }
 
 /*SECTION 2*/
@@ -380,7 +388,7 @@ nav{
 
 /*Media Queries*/
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 780px) {
   article, footer, header, #Navigation{
     grid-template-columns:  minmax(1em, 1fr) minmax(0, 35%) minmax(0,35%) minmax(1em, 1fr);
     grid-column-gap: 3rem;
@@ -407,8 +415,6 @@ nav{
     grid-gap: 2rem;
     align-items: center;
     z-index: 5;
-  }
-  #sect1 .c2{
     grid-column: 2/4;
   }
   #sect1 .c2 .image{
@@ -492,9 +498,6 @@ nav{
     background-color: var(--SectColor);
     opacity: var(--Opacity);
     pointer-events: none;
-  }
-  #sect1 .c2 h3, #sect1 .c2 p{
-    color: white !important;
   }
 }
 @media only screen and (min-width: 1000px) {
