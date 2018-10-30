@@ -36,9 +36,6 @@ body.hd #content {
   --Slate: #808285;
   --Blaze: #ffd400;
   --Gold: #aa9767;
-  --font1: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font2: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important;
-  --placeholder: url("https://www.uab.edu/it/home/images/01graphics/placeholder.png");
 }
 .c1{
   grid-row: 1/2;
@@ -74,7 +71,7 @@ body.hd #content {
   height: 100%;
 }
 *{
-  font-family: var(--font1);
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 article{
   display: block;
@@ -99,7 +96,7 @@ body{
   transform: translateZ(0);
 }
 h1, h2, h3, h4, h5, h6{
-  font-family: var(--font2) !important;
+  font-family: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important !important;
 }
 article h3, article h3 a, article h3 strong, article h3 b{
   font-size: 1.3rem !important;
@@ -428,7 +425,7 @@ section, section div{
 }
 #sect5 h5, #sect5 h4, #sect5 h4 a, #sect5 h4 strong, #sect5 h4 b{
   font-size: 0.8rem !important;
-  font-family: var(--font2) !important;
+  font-family: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important !important;
   font-weight: bold !important;
   margin: 0.3rem;
   align-self: center;
@@ -852,7 +849,7 @@ header .c3{
   -ms-grid-row: 2;
 }
 header h1{
-  font-family: var(--font2);
+  font-family: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important;
   margin-top: 0.5rem;
   font-size: 1.75rem;
   line-height: 1.5rem;
