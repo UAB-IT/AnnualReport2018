@@ -173,7 +173,6 @@ section p{
   margin-top: 1rem;
   font-weight: bold !important;
 }
-
 /*PARALLAX*/
 
 @media screen and (min-width: 40em) {
@@ -187,6 +186,7 @@ section p{
       overflow-x: hidden;
       overflow-y: auto;
       scroll-behavior: smooth;
+      background-attachment: local
     }
     .parallax__layer {
       position: absolute;
@@ -491,6 +491,12 @@ section, section div{
     grid-column-gap: 3rem;
     margin-top: 4.5rem;
     padding-top: 3rem;
+  }
+  .parallax{
+    background-image: url('https://www.uab.edu/it/annualreport/images/2018/SidePattern_v1-01.png');
+    background-size: 100px;
+    background-position: right;
+    background-repeat: repeat-y;
   }
   nav{
     -ms-grid-column:2;
