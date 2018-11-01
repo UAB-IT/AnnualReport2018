@@ -96,7 +96,7 @@ body{
   transform: translateZ(0);
 }
 h1, h2, h3, h4, h5, h6{
-  font-family: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important !important;
+  font-family: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important;
 }
 article h3, article h3 a, article h3 strong, article h3 b{
   font-size: 1.3rem !important;
@@ -425,7 +425,7 @@ section, section div{
 }
 #sect5 h5, #sect5 h4, #sect5 h4 a, #sect5 h4 strong, #sect5 h4 b{
   font-size: 0.8rem !important;
-  font-family: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important !important;
+  font-family: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important;
   font-weight: bold !important;
   margin: 0.3rem;
   align-self: center;
