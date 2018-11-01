@@ -241,7 +241,7 @@ section, section div{
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1/4;
-  margin-top: 2rem;
+  margin-top: 10px;
 }
 
 /*SECTION 1*/
