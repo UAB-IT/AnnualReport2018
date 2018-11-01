@@ -493,10 +493,13 @@ section, section div{
     padding-top: 3rem;
   }
   .parallax{
-    background-image: url('https://www.uab.edu/it/annualreport/images/2018/SidePattern_v1-01.png');
+    background-image: url('https://www.uab.edu/it/annualreport/images/2018/SidePattern_v1-01.png'), url('https://www.uab.edu/it/annualreport/images/2018/SidePattern_v1-01_right.png');
     background-size: 100px;
-    background-position: right;
+    background-position: left, right;
     background-repeat: repeat-y;
+  }
+  body{
+    background-position: right;
   }
   nav{
     -ms-grid-column:2;
