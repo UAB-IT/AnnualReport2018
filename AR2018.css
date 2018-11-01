@@ -484,7 +484,7 @@ section, section div{
     pointer-events: none;
   }
 }
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 900px) {
   article, footer, header, #Navigation{
     -ms-grid-columns: 1fr 35% 35% 1fr;
     grid-template-columns: minmax(1em, 1fr) minmax(0, 35%) minmax(0,35%) minmax(1em, 1fr);
