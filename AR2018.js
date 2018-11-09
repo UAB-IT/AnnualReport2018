@@ -1,5 +1,8 @@
 document.body.className += ' javascript';
 jQuery(document).ready(function() {
+  jQuery('body').children().wrapAll('<div class="parallax"></div>');
+});
+jQuery(document).ready(function() {
 // Check if element is scrolled into view
 function isScrolledIntoView(elem) {
   var docViewTop = jQuery(window).scrollTop();
