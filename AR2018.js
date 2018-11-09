@@ -1,8 +1,5 @@
 document.body.className += ' javascript';
 jQuery(document).ready(function() {
-  jQuery('body').children().wrapAll('<div class="parallax"></div>');
-});
-jQuery(document).ready(function() {
 // Check if element is scrolled into view
 function isScrolledIntoView(elem) {
   var docViewTop = jQuery(window).scrollTop();
@@ -13,24 +10,6 @@ function isScrolledIntoView(elem) {
 
   return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
-// If element is scrolled into view, fade it in
-jQuery('.parallax').scroll(function() {
-  jQuery('.animated').each(function() {
-    if (isScrolledIntoView(this) === true) {
-      jQuery(this).addClass('fadein');
-    }
-  });
-  jQuery('.underline').each(function() {
-    if (isScrolledIntoView(this) === true) {
-      jQuery(this).addClass('underlineAnim');
-    }
-  });
-  jQuery('.card').each(function(){
-    if (isScrolledIntoView(this) === true) {
-      jQuery(this).addClass('fadein');
-    }
-  });
-});
 
 jQuery(window).scroll(function() {
   jQuery('.animated').each(function() {
