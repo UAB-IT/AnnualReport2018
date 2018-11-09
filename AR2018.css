@@ -9,6 +9,9 @@ overflow: visible;
 .navbar.navbar-static-top{
   display: none !important;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /*ROOT*/
 .fixed{
@@ -84,7 +87,7 @@ article a:hover{
 body{
   margin: 0px;
   padding: 0px;
-  transform: translateZ(0);
+  /*transform: translateZ(0);*/
 }
 h1, h2, h3, h4, h5, h6{
   font-family: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important;
