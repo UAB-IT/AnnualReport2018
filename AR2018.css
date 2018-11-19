@@ -12,6 +12,20 @@ overflow: visible;
 html{
   scroll-behavior: smooth;
 }
+body.hd #maincolumn-wide {
+  padding: 0px !important;
+  max-width: 100%;
+}
+body.hd #whitebox {
+  max-width: 0px;
+background: none;
+overflow: visible;
+margin: 0 !important;
+max-width: 100% !important;
+}
+body.hd #content {
+  width: 100%;
+}
 
 /*ROOT*/
 .fixed{
