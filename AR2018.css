@@ -393,30 +393,40 @@ section, section div{
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
 }
+#sect5 .c2 div{
+  background-color: #EEEEEE;
+}
+#sect5 .c2 div:hover{
+  background-color: #E0E0E0;
+}
 #sect5 .c2 .card{
-  display:-ms-grid;
+  /* display:-ms-grid;
   -ms-grid-columns: 2fr 5fr;
   display: grid;
-  grid-template-columns: 2fr 5fr;
-  background-color: #fafafa;
-  padding: 0.5rem;
-  grid-gap: 1rem;
+  grid-template-columns: 2fr 5fr; */
+  background-color: #EEEEEE;
+  /* padding: 0.5rem; */
+  /* grid-gap: 1rem; */
 }
 #sect5 .c2 .card img{
   width: 100%;
 }
+#sect5 .c2 h5{
+  padding: 1rem 1rem 1.3rem;
+  margin: 0px;
+}
 #sect5 .c2 a{
   color: black !important;
-  background-color: #fafafa;
+  background-color: #EEE;
 }
 #sect5 .c2 a:hover, #sect5 .c2 a:hover .card{
-  background-color: #eee;
+  background-color: #E0E0E0;
 }
 #sect5 .c2 h4{
-  padding: 1rem 0px !important;
+  padding: 1rem;
 }
 #sect5 h5, #sect5 h4, #sect5 h4 a, #sect5 h4 strong, #sect5 h4 b{
-  font-size: 0.8rem !important;
+  font-size: 0.9rem !important;
   font-family: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important;
   font-weight: bold !important;
   margin: 0.3rem;
@@ -474,6 +484,24 @@ section, section div{
     opacity: 0.80;
     opacity: var(--Opacity);
     pointer-events: none;
+  }
+  #sect5 .c2{
+    -ms-grid-column:2;
+    -ms-grid-column-span:2;
+    -ms-grid-row: 2;
+    display:-ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  #sect5 .card h5{
+    -ms-grid-column: 2;
+  }
+  #sect5 .c2 a.seeMore{
+    -ms-grid-column:1;
+    grid-column: 2/3;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -644,22 +672,7 @@ section, section div{
     width: calc(100% - 1rem);
   }
   #sect5 .c2{
-    -ms-grid-column:2;
-    -ms-grid-column-span:2;
-    -ms-grid-row: 2;
-    display:-ms-grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
     grid-column: 2/4;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-  }
-  #sect5 .card h5{
-    -ms-grid-column: 2;
-  }
-  #sect5 .c2 a.seeMore{
-    -ms-grid-column:1;
-    grid-column: 2/3;
   }
   @supports (animation-duration: 1s) {
     .javascript .animated{
