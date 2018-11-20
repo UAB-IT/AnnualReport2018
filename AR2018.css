@@ -42,6 +42,18 @@ body.hd #content {
   --Blaze: #ffd400;
   --Gold: #aa9767;
 }
+*{
+  font-size: 12pt !important;
+  hyphens: none !important;
+}
+h1, h2, h3, h4, h5{ margin: 0px; font-family: 'futura-pt', sans-serif; font-weight: normal; }
+h1{ font-size: 2.75rem !important; }
+h2{ font-size: 1.5rem !important; }
+h3{ font-size: 1.25rem !important; }
+h4{ font-size: 1.5rem !important;  }
+h5{ font-size: 1.25rem !important; }
+h6{ font-size: 1.25rem !important; }
+p{ line-height: 1.5rem !important; margin: 0px; }
 .c1{
   -ms-grid-row:1;
   grid-row: 1/2;
@@ -107,23 +119,23 @@ body{
 }
 h1, h2, h3, h4, h5, h6{
   font-family: "kulturista-web", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !important;
-}
-article h3, article h3 a, article h3 strong, article h3 b{
-  font-size: 1.3rem !important;
   font-weight: bold !important;
 }
+/* article h3, article h3 a, article h3 strong, article h3 b{
+  font-size: 1.3rem !important;
+  font-weight: bold !important;
+} */
 article h2{
-  font-size: 26pt;
   font-weight: normal;
   color: #1E6B52;
   color: var(--SectColor);
   margin: 1em 0px;
 }
 article h2 span{
-  font-family: proxima-nova, sans-serif !important;
   font-weight: bold;
-  font-size: inherit;
-  color: inherit;
+  font-size: inherit !important;
+  color: inherit !important;
+    font-family: proxima-nova, sans-serif !important;
 }
 .whitetxt h1, .whitetxt h2, .whitetxt h3, .whitetxt h4, .whitetxt p{
   color: white !important;
@@ -177,49 +189,11 @@ section p{
 }
 .StatNumber h4{
   margin-bottom: 0px;
-  font-size: 200%;
   color: #1E6B52;
   color: var(--SectColor);
   margin-top: 1rem;
   font-weight: bold !important;
 }
-/*PARALLAX*/
-
-/*@media screen and (min-width: 40em) {
-  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
-    body{
-      transform: translateZ(0);
-    }
-    .parallax {
-      perspective: 1px;
-      height: 100vh;
-      overflow-x: hidden;
-      overflow-y: auto;
-      scroll-behavior: smooth;
-    }
-    .parallax__layer {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-    .parallax__layer--base {
-      transform: translateZ(0.5px) scale(0.505);
-      pointer-events: none;
-    }
-    .parallax__group {
-      position: relative;
-      transform-style: preserve-3d;
-    }
-    .parallax__layer--back {
-      transform: translateZ(0.2px) scale(0.81);
-      pointer-events: none;
-      transform-style: preserve-3d;
-    }
-  }
-}*/
-
 /*HERO*/
 nav{
   -ms-grid-column:1;
@@ -287,6 +261,9 @@ section, section div{
   opacity: var(--Opacity);
   z-index: -15;
 }
+#sect1 .c3 h3{
+  margin-top: 3rem;
+}
 
 /*SECTION 2*/
 
@@ -316,6 +293,7 @@ section, section div{
 #sect2 .image{
   background-position: center;
   background-size: cover;
+  min-height: 10rem;
   height: 100%;
   width: 100%;
 }
@@ -325,7 +303,7 @@ section, section div{
 #sect3 .c1 .image{
   background-position: center;
   background-size: cover;
-  min-height: 20rem;
+  min-height: 15rem;
 }
 #sect3 .c2{
   -ms-grid-column:2;
@@ -355,15 +333,6 @@ section, section div{
   height: 100%;
   position: relative;
   z-index: -6;
-}
-#sect3 .c4{
-  display:-ms-grid;
-  -ms-grid-columns:1fr 1fr;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2rem;
-  grid-row-gap: 0rem;
-  align-items: baseline;
 }
 
 /*SECTION 4*/
@@ -499,6 +468,24 @@ section, section div{
     opacity: var(--Opacity);
     pointer-events: none;
   }
+  #sect1 .c2 .image{
+    min-height: 25rem;
+  }
+  #sect2 .image{
+    min-height: 15rem;
+  }
+  #sect3 .c1 .image{
+    min-height: 20rem;
+  }
+  #sect3 .c4{
+    display:-ms-grid;
+    -ms-grid-columns:1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 0rem;
+    align-items: baseline;
+  }
   #sect5 .c2{
     -ms-grid-column:2;
     -ms-grid-column-span:2;
@@ -519,6 +506,9 @@ section, section div{
   }
 }
 @media only screen and (min-width: 900px) {
+  *{
+    font-size: 12pt;
+  }
   article, footer, header, #Navigation{
     -ms-grid-columns: 1fr 35% 35% 1fr;
     grid-template-columns: minmax(1em, 1fr) minmax(0, 35%) minmax(0,35%) minmax(1em, 1fr);
@@ -547,6 +537,10 @@ section, section div{
     -ms-grid-column:2;
     -ms-grid-column-span:2;
     grid-column: 2/4;
+  }
+  #sect1 .c2 .LearnMore{
+     margin-bottom: 3rem;
+     padding-bottom: 1.5rem;
   }
   #sect1 .c2{
     -ms-grid-row: 2;
@@ -588,6 +582,9 @@ section, section div{
     -ms-grid-column:1;
     -ms-grid-column-span:5;
     grid-column: 1/5;
+  }
+  #sect1 .c3 h3{
+    margin-top: 0px;
   }
   #sect2 .c2{
     -ms-grid-row:1;
@@ -822,6 +819,8 @@ section, section div{
     margin-top: 4.5rem;
     padding-top: 3rem;
   }
+  h2{ font-size: 2rem !important; }
+  h4{ font-size: 1.75rem !important; }
 }
 
 /*DELETE ALL CONTENT BELOW THIS LINE IN PRODUCTION*/
@@ -833,6 +832,11 @@ footer{
   color: white;
   grid-row-gap: 0.5rem;
   padding-top: 0px;
+}
+footer h4{
+  padding: 0.5rem 0px;
+  font-size: 1.25rem !important;
+  margin-top: 1rem;
 }
 footer a{
   color: white;
