@@ -29,3 +29,7 @@ jQuery(window).scroll(function() {
   });
 });
 });
+
+jQuery(document).ready(function() {
+jQuery(window).enllax();
+});
