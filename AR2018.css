@@ -267,7 +267,7 @@ section, section div{
 #sect1 .StatNumber{
   margin-top: 3rem;
 }
-#sect1 .LearnMore{
+#sect1 .c6 .LearnMore, #sect1 .c5 .LearnMore{
   margin-top: -1.5rem;
 }
 
