@@ -295,6 +295,7 @@ section, section div{
   grid-column-gap: 2rem;
   grid-row-gap: 0rem;
   align-items: baseline;
+  margin-top: -2rem;
 }
 #sect2 .image{
   background-position: center;
